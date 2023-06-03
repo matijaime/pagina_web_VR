@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Experiencia de Realidad Virtual</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-hand-cursor-component@1.2.0/dist/aframe-hand-cursor-component.min.js"></script>
+</head>
+<body>
+    <a-scene vr-mode-ui="enabled: true">
+        <a-entity id="camera" camera look-controls wasd-controls rotate-on-mousemove></a-entity>
+        <a-sky src="images/room1.jpg"></a-sky>
+        <a-entity hand-cursor="hand: right; closedHandModel: #handClosedModel; openHandModel: #handOpenModel"></a-entity>
+    </a-scene>
+
+    <script src="script.js"></script>
+</body>
+</html>
